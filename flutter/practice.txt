@@ -1,0 +1,77 @@
+import 'dart:async';
+
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+
+void main() => runApp(MaterialApp(
+      home: Home(),
+    ));
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('My noobs are team'),
+        centerTitle: true,
+        backgroundColor: Colors.red[600],
+      ),
+      // ignore: prefer_const_constructors
+      body: Row(
+        children: <Widget>[
+          Text("hello how"),
+          IconButton(onPressed: () {}, icon: Icon(Icons.airport_shuttle)),
+          TextButton(
+            onPressed: () {},
+            child: Text("whyyy"),
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(40),
+            child: Text("What r u doing"),
+          ),
+        ],
+      ),
+
+      // child: Text("what are you doing"),
+      // color: Colors.blue,
+      // padding: EdgeInsets.symmetric(horizontal: 10, vertical: 90),
+      // margin: EdgeInsets.all(50),
+
+      // child: IconButton(
+      //   onPressed: () {},
+      //   icon: Icon(
+      //     Icons.airplanemode_inactive,
+      //     color: Colors.blue,
+      //     size: 100.0,
+      //   ),
+      // ),
+
+      // child: Icon(
+      //   Icons.airplanemode_off,
+      //   size: 50.0,
+      //   color: Colors.pink,
+      // ),
+
+      // child: Text(
+      //   "salamalekum.",
+      //   style: TextStyle(
+      //     fontSize: 30,
+      //     fontWeight: FontWeight.bold,
+      //     letterSpacing: 2.0,
+      //     color: Colors.blue,
+      //   ),
+      // ),
+
+      // child: Image.network(
+      //     "https://cdn-icons-png.freepik.com/256/9360/9360089.png?ga=GA1.1.67773784.1709750496&  "),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Text("daz"),
+        backgroundColor: Color.fromARGB(221, 22, 245, 92),
+      ),
+    );
+  }
+}
